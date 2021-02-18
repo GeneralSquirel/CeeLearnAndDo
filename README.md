@@ -1,6 +1,9 @@
 # CeeLearnAndDo
 CeeLearnAndDo is a school  assignment
 
+# Trello
+Trello link: https://trello.com/b/kaT2x8o9/ceelearnanddo-halil-jelle-rowan
+
 # Drive:
 
 Documentation:
