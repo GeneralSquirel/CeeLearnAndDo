@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\gebruiker\\source\\repos\\CeeLearnAndDo_WijOnt\\CeeLearnAndDo_WijOnt\\CeeLearnAndDo_WijOnt.csproj": {}
+    "C:\\Users\\batuh\\Source\\Repos\\CeeLearnAndDo\\CeeLearnAndDo_WijOnt\\CeeLearnAndDo_WijOnt.csproj": {}
   },
   "projects": {
-    "C:\\Users\\gebruiker\\source\\repos\\CeeLearnAndDo_WijOnt\\CeeLearnAndDo_WijOnt\\CeeLearnAndDo_WijOnt.csproj": {
+    "C:\\Users\\batuh\\Source\\Repos\\CeeLearnAndDo\\CeeLearnAndDo_WijOnt\\CeeLearnAndDo_WijOnt.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gebruiker\\source\\repos\\CeeLearnAndDo_WijOnt\\CeeLearnAndDo_WijOnt\\CeeLearnAndDo_WijOnt.csproj",
+        "projectUniqueName": "C:\\Users\\batuh\\Source\\Repos\\CeeLearnAndDo\\CeeLearnAndDo_WijOnt\\CeeLearnAndDo_WijOnt.csproj",
         "projectName": "CeeLearnAndDo_WijOnt",
-        "projectPath": "C:\\Users\\gebruiker\\source\\repos\\CeeLearnAndDo_WijOnt\\CeeLearnAndDo_WijOnt\\CeeLearnAndDo_WijOnt.csproj",
-        "packagesPath": "C:\\Users\\gebruiker\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gebruiker\\source\\repos\\CeeLearnAndDo_WijOnt\\CeeLearnAndDo_WijOnt\\obj\\",
+        "projectPath": "C:\\Users\\batuh\\Source\\Repos\\CeeLearnAndDo\\CeeLearnAndDo_WijOnt\\CeeLearnAndDo_WijOnt.csproj",
+        "packagesPath": "C:\\Users\\batuh\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\batuh\\Source\\Repos\\CeeLearnAndDo\\CeeLearnAndDo_WijOnt\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\gebruiker\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\batuh\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
