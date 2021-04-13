@@ -1,15 +1,53 @@
-﻿body {
-    background: linear-gradient(to bottom,rgba(2,0,36,1),rgba(0,212,255,1));
-}
-
-/*--------------------------------------------------
+﻿/*--------------------------------------------------
                 Custom CSS Styling
 ----------------------------------------------------*/
-
+body {
+    background: #014e75;
+    margin:0%;
+    padding:0%;
+}
+html {
+    background: #014e75;
+    margin: 0%;
+    padding: 0%;
+}
+/*--------------------------------------------------
+                Navigation
+----------------------------------------------------*/
 .navbar {
     background-color: #000;
     color: white;
+    border-bottom-width:0px !important;
 }
-.nav-link {
-    color: green;
+.navbar-light .navbar-brand {
+    font-size: 200%;
+    color: rgba(0,212,255,1);
+}
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(0,212,255,1);
+}
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(0,212,255,1);
+}
+/*-----------hover----------*/
+.navbar-light .navbar-brand:hover {
+    color: #056fbc;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #056fbc;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #056fbc;
+}
+/*--------------------------------------------------
+                CONTENT
+----------------------------------------------------*/
+
+/*--------------------------------------------------
+                FOOTER
+----------------------------------------------------*/
+.footer {
+    background-color: #000;
+    color: white;
+    border-top-width: 0px !important;
 }
