@@ -5,11 +5,18 @@ body {
     background: #014e75;
     margin:0%;
     padding:0%;
+    color:black;
 }
 html {
     background: #014e75;
     margin: 0%;
     padding: 0%;
+}
+a{
+    color:orange;
+}
+a:hover{
+    color:orangered;
 }
 /*--------------------------------------------------
                 Navigation
@@ -40,9 +47,16 @@ html {
     color: #056fbc;
 }
 /*--------------------------------------------------
-                CONTENT
+                Forms
 ----------------------------------------------------*/
+.btn{
+    background: orange;
+}
 
+    /*-----------hover----------*/
+    .btn:hover {
+        background: orangered;
+    }
 /*--------------------------------------------------
                 FOOTER
 ----------------------------------------------------*/
