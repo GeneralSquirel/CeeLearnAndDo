@@ -1,30 +1,11 @@
-﻿using System;
-using Microsoft.EntityFrameworkCore.Migrations;
+﻿using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace CeeLearnAndDo_WijOnt.Data.Migrations
+namespace CeeLearnAndDo_WijOnt.Migrations
 {
-    public partial class consultantsInit : Migration
+    public partial class Consultant : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.CreateTable(
-                name: "User",
-                columns: table => new
-                {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    Email = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Password = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Username = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Firstname = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Lastname = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    CreationDate = table.Column<DateTime>(type: "datetime2", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_User", x => x.Id);
-                });
-
             migrationBuilder.CreateTable(
                 name: "Consultant",
                 columns: table => new
@@ -34,7 +15,8 @@ namespace CeeLearnAndDo_WijOnt.Data.Migrations
                     UserId1 = table.Column<int>(type: "int", nullable: true),
                     UserId = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     ImageUrl = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Biography = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                    Biography = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Language = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -57,9 +39,6 @@ namespace CeeLearnAndDo_WijOnt.Data.Migrations
         {
             migrationBuilder.DropTable(
                 name: "Consultant");
-
-            migrationBuilder.DropTable(
-                name: "User");
         }
     }
 }

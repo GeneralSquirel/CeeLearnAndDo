@@ -7,11 +7,11 @@ using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
-namespace CeeLearnAndDo_WijOnt.Data.Migrations
+namespace CeeLearnAndDo_WijOnt.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20210414144041_consultantCards")]
-    partial class consultantCards
+    [Migration("20210414183835_Consultant")]
+    partial class Consultant
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -48,6 +48,32 @@ namespace CeeLearnAndDo_WijOnt.Data.Migrations
                     b.HasIndex("UserId1");
 
                     b.ToTable("Consultant");
+                });
+
+            modelBuilder.Entity("CeeLearnAndDo_WijOnt.Models.FaQ", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Answer")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("CreationTime")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Question")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int?>("UserId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("FaQ");
                 });
 
             modelBuilder.Entity("CeeLearnAndDo_WijOnt.Models.User", b =>
@@ -285,6 +311,15 @@ namespace CeeLearnAndDo_WijOnt.Data.Migrations
                     b.HasOne("CeeLearnAndDo_WijOnt.Models.User", "User")
                         .WithMany()
                         .HasForeignKey("UserId1");
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("CeeLearnAndDo_WijOnt.Models.FaQ", b =>
+                {
+                    b.HasOne("CeeLearnAndDo_WijOnt.Models.User", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId");
 
                     b.Navigation("User");
                 });
