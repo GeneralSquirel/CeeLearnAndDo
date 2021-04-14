@@ -1,0 +1,88 @@
+﻿/*--------------------------------------------------
+                Custom CSS Styling
+----------------------------------------------------*/
+body {
+    background: #014e75;
+    margin:0%;
+    padding:0%;
+    color:black;
+}
+html {
+    background: #014e75;
+    margin: 0%;
+    padding: 0%;
+}
+a{
+    color:orange;
+}
+a:hover{
+    color:orangered;
+}
+/*--------------------------------------------------
+                Navigation
+----------------------------------------------------*/
+.navbar {
+    background-color: #000;
+    color: white;
+    border-bottom-width:0px !important;
+}
+.navbar-light .navbar-brand {
+    font-size: 200%;
+    color: rgba(0,212,255,1);
+}
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(0,212,255,1);
+}
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(0,212,255,1);
+}
+/*-----------hover----------*/
+.navbar-light .navbar-brand:hover {
+    color: #056fbc;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #056fbc;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #056fbc;
+}
+/*--------------------------------------------------
+                Forms
+----------------------------------------------------*/
+.btn{
+    background: orange;
+}
+
+    /*-----------hover----------*/
+    .btn:hover {
+        background: orangered;
+    }
+
+/*--------------------------------------------------
+                FAQ
+----------------------------------------------------*/
+.capsule {
+    background: black;
+    color: white;
+    width: 100%;
+    height: auto;
+    padding: 1%;
+    border-radius: 10px;
+    text-align: center;
+}
+.Question {
+    color: rgba(0,212,255,1);
+    align-content: center;
+}
+.Anwser {
+    color: orangered;
+    
+}
+/*--------------------------------------------------
+                FOOTER
+----------------------------------------------------*/
+.footer {
+    background-color: #000;
+    color: white;
+    border-top-width: 0px !important;
+}
