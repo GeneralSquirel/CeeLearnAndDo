@@ -1,7 +1,7 @@
 ﻿@model IEnumerable<CeeLearnAndDo_WijOnt.Models.Consultant>
 
 @{
-    ViewData["Title"] = "COnsultants";
+    ViewData["Title"] = "Consultants";
 }
 
 <div class="customcontainer">
@@ -59,11 +59,11 @@
                         </div>
 
                         <div style="width: 100%; height: 20px; margin-bottom: 20px; text-align: center; margin-top:25%;">
-                            <p style="color: grey; margin-top:5%;">@Html.DisplayFor(modelItem => item.User)</p>
+                            <p style="color: grey; margin-top:5%;">Naam: @Html.DisplayFor(modelItem => item.UserId)</p>
 
-                            @*<p style="color: grey; margin-top:5%;">Land:    @Html.DisplayFor(modelItem => item.Land)</p>
+                            <p style="color: grey; margin-top:5%;">Vak: @Html.DisplayFor(modelItem => item.Language)</p>
 
-                            <p style="color: grey; margin-top:5%;">Provincie:   @Html.DisplayFor(modelItem => item.Provincie)</p>
+                            @*<p style="color: grey; margin-top:5%;">Provincie:   @Html.DisplayFor(modelItem => item.Provincie)</p>
 
                             <p style="color: grey; margin-top:5%;">Plaats:  @Html.DisplayFor(modelItem => item.Plaats)</p>
 

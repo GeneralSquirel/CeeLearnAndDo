@@ -95,7 +95,7 @@ namespace CeeLearnAndDo_WijOnt.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,UserId,ImageUrl,Biography")] Consultant consultant)
+        public async Task<IActionResult> Create([Bind("Id,UserId,ImageUrl,Biography,Language")] Consultant consultant)
         {
             if (ModelState.IsValid)
             {
@@ -127,7 +127,7 @@ namespace CeeLearnAndDo_WijOnt.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,UserId,ImageUrl,Biography")] Consultant consultant)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,UserId,ImageUrl,Biography,Language")] Consultant consultant)
         {
             if (id != consultant.Id)
             {
