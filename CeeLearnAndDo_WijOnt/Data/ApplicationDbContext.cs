@@ -13,6 +13,6 @@ namespace CeeLearnAndDo_WijOnt.Data
             : base(options)
         {
         }
-        public DbSet<CeeLearnAndDo_WijOnt.Models.Consultant> Consultant { get; set; }
+        public DbSet<CeeLearnAndDo_WijOnt.Models.FaQ> FaQ { get; set; }
     }
 }
