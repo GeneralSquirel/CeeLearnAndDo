@@ -19,10 +19,12 @@ namespace CeeLearnAndDo_WijOnt.Controllers
             _context = context;
         }
         //get Faq overview
-        public IActionResult FaQs()
+        public async Task<IActionResult> FaQs()
         {
-            return View();
+            return View(await _context.FaQ.ToListAsync());
         }
+
+
         // GET: FaQs
         public async Task<IActionResult> Index()
         {
