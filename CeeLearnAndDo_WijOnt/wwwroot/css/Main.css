@@ -57,6 +57,27 @@ a:hover{
     .btn:hover {
         background: orangered;
     }
+
+/*--------------------------------------------------
+                FAQ
+----------------------------------------------------*/
+.capsule {
+    background: black;
+    color: white;
+    width: 100%;
+    height: auto;
+    padding: 1%;
+    border-radius: 10px;
+    text-align: center;
+}
+.Question {
+    color: rgba(0,212,255,1);
+    align-content: center;
+}
+.Anwser {
+    color: orangered;
+    
+}
 /*--------------------------------------------------
                 FOOTER
 ----------------------------------------------------*/

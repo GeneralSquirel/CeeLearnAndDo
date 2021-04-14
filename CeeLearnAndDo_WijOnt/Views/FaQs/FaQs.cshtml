@@ -1,0 +1,21 @@
+﻿@model IEnumerable<CeeLearnAndDo_WijOnt.Models.FaQ>
+
+@{
+    ViewData["Title"] = "FaQs";
+}
+
+<h1>FaQs</h1>
+
+@foreach (var item in Model)
+{
+<div class="capsule">
+    <div class="Question">
+        <h3>Q| @Html.DisplayFor(modelItem => item.Question)</h3>
+    </div>
+    <div class="Anwser">
+        <p>A|  @Html.DisplayFor(modelItem => item.Answer)</p>
+    </div>
+    <div class="Date">
+        <p>Created At: @Html.DisplayFor(modelItem => item.CreationTime)</p>
+    </div>
+</div>}

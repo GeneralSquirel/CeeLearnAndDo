@@ -18,7 +18,11 @@ namespace CeeLearnAndDo_WijOnt.Controllers
         {
             _context = context;
         }
-
+        //get Faq overview
+        public IActionResult FaQs()
+        {
+            return View();
+        }
         // GET: FaQs
         public async Task<IActionResult> Index()
         {
