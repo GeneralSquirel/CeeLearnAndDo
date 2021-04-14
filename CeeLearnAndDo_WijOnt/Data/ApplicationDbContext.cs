@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using CeeLearnAndDo_WijOnt.Models;
 
 namespace CeeLearnAndDo_WijOnt.Data
 {
@@ -12,5 +13,6 @@ namespace CeeLearnAndDo_WijOnt.Data
             : base(options)
         {
         }
+        public DbSet<CeeLearnAndDo_WijOnt.Models.Consultant> Consultant { get; set; }
     }
 }
