@@ -1,0 +1,81 @@
+﻿@model IEnumerable<CeeLearnAndDo_WijOnt.Models.Consultant>
+
+@{
+    ViewData["Title"] = "Consultants";
+}
+
+<div class="customcontainer">
+
+    <br />
+    <h1>Consultants</h1>
+
+    <hr style="padding-left: 100%;" />
+
+    @*<form asp-controller="Consultants" asp-action="Index" method="get">
+        <p>
+            Consultant: <input type="text" name="SearchString" />
+            <input type="submit" value="Filter" />
+        </p>
+    </form>*@
+
+    @if (TempData["Message"] != null)
+        {
+    <div id="helpdiv" class="alert alert-success" role="alert" style="
+
+                position: absolute;
+                top: 25%;
+                left:25px;
+                -webkit-transform: translateY(-50%);
+                -ms-transform: translateY(-50%);
+                transform: translateY(-50%);
+                ">
+
+        @TempData["Message"]
+    </div>
+    <script type="text/javascript">
+                // close the div in 5 secs
+                window.setTimeout("closeHelpDiv();", 1600);
+
+                function closeHelpDiv() {
+                    document.getElementById("helpdiv").style.display = " none";
+                }
+    </script>
+        }
+
+    @*<hr />*@
+    <br />
+
+    <div class=".container">
+        <div class="row" style="margin:0">
+            @foreach (var item in Model)
+                {
+            <div class="col-md-3" id="@( "consultant" + @item.Id )" style=" padding:0px; text-align: center; align-content:center; text-decoration: none;">
+                <a asp-action="Consultants" asp-route-id="@item.Id" style="text-decoration: none;">
+
+                    <div class="card" style="height: 550px; text-align: center; align-content:center; margin-left:15px; margin-bottom:15px;">
+
+                        <div style="left:10px; border-left:10px; width:100%; height:100px; text-align:center; align-content: center;">
+                            <img class="consultantfoto" src="@item.ImageUrl" alt="Card image cap" style="width:90%; height:120%;">
+                        </div>
+
+                        <div style="width: 100%; height: 20px; margin-bottom: 20px; text-align: center; margin-top:25%;">
+                            <p style="color: grey; margin-top:5%;">Naam: @Html.DisplayFor(modelItem => item.UserId)</p>
+
+                            <p style="color: grey; margin-top:5%;">Vak: @Html.DisplayFor(modelItem => item.Language)</p>
+
+                            @*<p style="color: grey; margin-top:5%;">Provincie:   @Html.DisplayFor(modelItem => item.Provincie)</p>
+
+                            <p style="color: grey; margin-top:5%;">Plaats:  @Html.DisplayFor(modelItem => item.Plaats)</p>
+
+                            <p style="color: grey; margin-top:5%;">Aantal personen: @Html.DisplayFor(modelItem => item.Aantalpersonen)</p>
+
+                            <p style="color: grey; margin-top:5%;">Type huisje: @Html.DisplayFor(modelItem => item.Typehuisje)</p>*@
+                        </div>
+                    </div>
+                </a>
+            </div>
+                }
+        </div>
+    </div>
+</div>
+
