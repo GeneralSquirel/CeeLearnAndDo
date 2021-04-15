@@ -15,5 +15,6 @@ namespace CeeLearnAndDo_WijOnt.Data
         }
         public DbSet<CeeLearnAndDo_WijOnt.Models.FaQ> FaQ { get; set; }
         public DbSet<CeeLearnAndDo_WijOnt.Models.Consultant> Consultant { get; set; }
+        public DbSet<CeeLearnAndDo_WijOnt.Models.Article> Article { get; set; }
     }
 }
