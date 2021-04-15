@@ -1,0 +1,49 @@
+﻿@model IEnumerable<CeeLearnAndDo_WijOnt.Models.Article>
+
+@{
+    ViewData["Title"] = "Article";
+}
+
+<h1>Article</h1>
+
+@foreach (var item in Model)
+{
+    <div class="ArticleBox">
+        <div class="Consultant">
+            <h3>Constultant: @Html.DisplayFor(modelItem => item.Consultant.Id) </h3>
+        </div>
+
+        <div class="ArticleTitle">
+            <h3>Title: @Html.DisplayFor(modelItem => item.Title)</h3>
+        </div>
+
+        <div class="ArticleDate">
+            <h3>Date: @Html.DisplayFor(modelItem => item.CreationDate)</h3>
+        </div>
+
+        <div class="ArticleContent">
+            <h3>Content: @Html.DisplayFor(modelItem => item.Content)</h3>
+        </div>
+
+    </div>
+}
+
+<div class="ArticleBox col-sm-4">
+    <div class="Consultant">
+        <h3>Consultant: Halil Aydin </h3>
+    </div>
+
+    <div class="ArticleTitle">
+        <h3>Title: Visual studio installatie</h3>
+    </div>
+
+    <div class="ArticleDate">
+        <h3>Date: 07-02-2021</h3>
+    </div>
+
+    <div class="ArticleContent">
+        <h3>Content: test</h3>
+    </div>
+
+    <a asp-action="Details">Details</a>
+</div>

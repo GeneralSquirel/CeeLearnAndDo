@@ -78,10 +78,26 @@ a:hover{
     color: orangered;
     
 }
-/*--------------------------------------------------
+/*------------------------------------------------
+    Article
+-------------------------------------------------*/
+
+.ArticleBox {
+    background: black;
+    color: white;
+    width: 100%;
+    height: auto;
+    padding: 1%;
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+    /*--------------------------------------------------
                 FOOTER
 ----------------------------------------------------*/
-.footer {
+    .footer
+{
     background-color: #000;
     color: white;
     border-top-width: 0px !important;
